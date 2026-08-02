@@ -39,48 +39,6 @@ flowchart LR
 
 Both projects are open source under the MIT License.
 
-## Quick start
-
-### Build an Agent in-process
-
-```bash
-npm install @zerone-agent/agent-sdk
-```
-
-```ts
-import { createAgent } from "@zerone-agent/agent-sdk";
-
-const agent = createAgent({ model: "claude-sonnet-4-6" });
-const result = await agent.prompt("Summarize this project.");
-
-console.log(result.text);
-```
-
-See the [Agent SDK documentation](https://github.com/zerone-agents/agent-sdk#readme) for providers, tools, MCP, skills, and permissions.
-
-### Run Agents as a service
-
-```bash
-npm install @zerone-agent/agent-runtime
-```
-
-Create an `agents.yaml` anywhere you want:
-
-```yaml
-agents:
-  - id: assistant
-    model: claude-sonnet-4-6
-    systemPrompt: You are a helpful assistant.
-```
-
-Start the runtime with its explicit path:
-
-```bash
-npx open-agent --config ./agents.yaml
-```
-
-See the [Agent Runtime documentation](https://github.com/zerone-agents/agent-runtime#readme) for HTTP/SSE APIs, sessions, metrics, authentication, and deployment.
-
 ## Zerone products
 
 ### Desktop Agent

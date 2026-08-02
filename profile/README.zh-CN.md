@@ -39,48 +39,6 @@ flowchart LR
 
 两款产品均以 MIT License 开源。
 
-## 快速开始
-
-### 在进程内构建 Agent
-
-```bash
-npm install @zerone-agent/agent-sdk
-```
-
-```ts
-import { createAgent } from "@zerone-agent/agent-sdk";
-
-const agent = createAgent({ model: "claude-sonnet-4-6" });
-const result = await agent.prompt("总结这个项目。");
-
-console.log(result.text);
-```
-
-模型、工具、MCP、技能与权限等完整用法请查看 [Agent SDK 文档](https://github.com/zerone-agents/agent-sdk#readme)。
-
-### 把 Agent 作为服务运行
-
-```bash
-npm install @zerone-agent/agent-runtime
-```
-
-在任意位置创建 `agents.yaml`：
-
-```yaml
-agents:
-  - id: assistant
-    model: claude-sonnet-4-6
-    systemPrompt: 你是一位乐于助人的助手。
-```
-
-通过明确路径启动 Runtime：
-
-```bash
-npx open-agent --config ./agents.yaml
-```
-
-HTTP/SSE 接口、会话、指标、认证与部署方式请查看 [Agent Runtime 文档](https://github.com/zerone-agents/agent-runtime#readme)。
-
 ## Zerone 产品
 
 ### 桌面 Agent
