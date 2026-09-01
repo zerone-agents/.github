@@ -10,9 +10,15 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/@zerone-agent/agent-sdk"><img alt="Agent SDK npm 版本" src="https://img.shields.io/npm/v/@zerone-agent/agent-sdk?label=Agent%20SDK&color=dd7151"></a>
   <a href="https://www.npmjs.com/package/@zerone-agent/agent-runtime"><img alt="Agent Runtime npm 版本" src="https://img.shields.io/npm/v/@zerone-agent/agent-runtime?label=Agent%20Runtime&color=789988"></a>
-  <a href="https://github.com/zerone-agents/agent-sdk/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-34312f"></a>
+  <a href="https://github.com/zerone-agents/agent-deployer"><img alt="Agent Deployer 容器生命周期" src="https://img.shields.io/badge/Agent%20Deployer-container%20lifecycle-00ADD8?logo=docker&logoColor=white"></a>
+  <a href="https://github.com/zerone-agents/agent-hub"><img alt="Agent Hub 团队控制平面" src="https://img.shields.io/badge/Agent%20Hub-team%20control%20plane-5965F2"></a>
+</p>
+
+<p align="center">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
   <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white">
+  <a href="#公开开发栈"><img alt="三个 MIT 开源项目" src="https://img.shields.io/badge/3%20projects-MIT-34312f"></a>
+  <a href="https://github.com/zerone-agents/agent-hub/blob/main/LICENSE"><img alt="Agent Hub 源码可用许可证" src="https://img.shields.io/badge/Agent%20Hub-source--available-536878"></a>
 </p>
 
 Zerone Agents 构建面向开发者的 Agent 基础设施：在应用进程内构建完整能力，将其作为服务对外运行，管理运行时容器的生命周期，并支持团队统一运行与治理。其中大部分组件以 MIT License 开源；Agent Hub 则以自有许可证开放源代码。

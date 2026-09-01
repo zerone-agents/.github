@@ -10,9 +10,15 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/@zerone-agent/agent-sdk"><img alt="Agent SDK npm version" src="https://img.shields.io/npm/v/@zerone-agent/agent-sdk?label=Agent%20SDK&color=dd7151"></a>
   <a href="https://www.npmjs.com/package/@zerone-agent/agent-runtime"><img alt="Agent Runtime npm version" src="https://img.shields.io/npm/v/@zerone-agent/agent-runtime?label=Agent%20Runtime&color=789988"></a>
-  <a href="https://github.com/zerone-agents/agent-sdk/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-34312f"></a>
+  <a href="https://github.com/zerone-agents/agent-deployer"><img alt="Agent Deployer container lifecycle" src="https://img.shields.io/badge/Agent%20Deployer-container%20lifecycle-00ADD8?logo=docker&logoColor=white"></a>
+  <a href="https://github.com/zerone-agents/agent-hub"><img alt="Agent Hub team control plane" src="https://img.shields.io/badge/Agent%20Hub-team%20control%20plane-5965F2"></a>
+</p>
+
+<p align="center">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
   <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white">
+  <a href="#public-developer-stack"><img alt="Three MIT-licensed projects" src="https://img.shields.io/badge/3%20projects-MIT-34312f"></a>
+  <a href="https://github.com/zerone-agents/agent-hub/blob/main/LICENSE"><img alt="Agent Hub source-available license" src="https://img.shields.io/badge/Agent%20Hub-source--available-536878"></a>
 </p>
 
 Zerone Agents builds developer infrastructure for adding complete Agent capabilities to applications, exposing them as services, managing their container lifecycle, and operating them across teams. Most of the stack is open source under the MIT License; Agent Hub is source-available under its own license.
