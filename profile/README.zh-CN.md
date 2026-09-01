@@ -8,10 +8,10 @@
 <p align="center">从零（Zero）到一（One），通往 Agent-First 时代。</p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@zerone-agent/agent-sdk"><img alt="Agent SDK npm 版本" src="https://img.shields.io/npm/v/@zerone-agent/agent-sdk?label=Agent%20SDK&color=dd7151"></a>
-  <a href="https://www.npmjs.com/package/@zerone-agent/agent-runtime"><img alt="Agent Runtime npm 版本" src="https://img.shields.io/npm/v/@zerone-agent/agent-runtime?label=Agent%20Runtime&color=789988"></a>
-  <a href="https://github.com/zerone-agents/agent-deployer"><img alt="Agent Deployer 容器生命周期" src="https://img.shields.io/badge/Agent%20Deployer-container%20lifecycle-00ADD8?logo=docker&logoColor=white"></a>
-  <a href="https://github.com/zerone-agents/agent-hub"><img alt="Agent Hub 团队控制平面" src="https://img.shields.io/badge/Agent%20Hub-team%20control%20plane-5965F2"></a>
+  <a href="https://github.com/zerone-agents/agent-sdk/tags"><img alt="Agent SDK 最新标签" src="https://img.shields.io/github/v/tag/zerone-agents/agent-sdk?sort=semver&filter=sdk-v%2A&label=Agent%20SDK&color=dd7151"></a>
+  <a href="https://github.com/zerone-agents/agent-runtime/tags"><img alt="Agent Runtime 最新标签" src="https://img.shields.io/github/v/tag/zerone-agents/agent-runtime?sort=semver&filter=runtime-v%2A&label=Agent%20Runtime&color=789988"></a>
+  <a href="https://github.com/zerone-agents/agent-deployer/tags"><img alt="Agent Deployer 最新标签" src="https://img.shields.io/github/v/tag/zerone-agents/agent-deployer?sort=semver&filter=deployer-v%2A&label=Agent%20Deployer&color=00ADD8"></a>
+  <a href="https://github.com/zerone-agents/agent-hub/tags"><img alt="Agent Hub 最新标签" src="https://img.shields.io/github/v/tag/zerone-agents/agent-hub?sort=semver&filter=hub-v%2A&label=Agent%20Hub&color=5965F2"></a>
 </p>
 
 <p align="center">
