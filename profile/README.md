@@ -12,9 +12,10 @@
   <a href="https://www.npmjs.com/package/@zerone-agent/agent-runtime"><img alt="Agent Runtime npm version" src="https://img.shields.io/npm/v/@zerone-agent/agent-runtime?label=Agent%20Runtime&color=789988"></a>
   <a href="https://github.com/zerone-agents/agent-sdk/blob/main/LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-34312f"></a>
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
+  <img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white">
 </p>
 
-Zerone Agents is open-source developer infrastructure for building complete Agent capabilities inside applications and running those same capabilities as independently deployable services. Around that foundation, Zerone provides products for personal Agent work and team operations.
+Zerone Agents builds developer infrastructure for adding complete Agent capabilities to applications, exposing them as services, managing their container lifecycle, and operating them across teams. Most of the stack is open source under the MIT License; Agent Hub is source-available under its own license.
 
 ## How the pieces fit
 
@@ -24,20 +25,23 @@ flowchart LR
   SDK --> RT["Agent Runtime<br/>Run as a service"]
   RT --> CLOUD["Cloud / server"]
   RT --> CLI["Local CLI"]
+  RT --> DEPLOYER["Agent Deployer<br/>Container lifecycle"]
+  DEPLOYER --> HUB["Agent Hub<br/>Team control plane"]
   SDK --> DESKTOP["Desktop Agent<br/>Personal workspace"]
-  RT --> HUB["Agent Hub<br/>Team operations"]
   PROTOCOL["AgentUse Protocol"] -. "capability contract" .-> SDK
   MARKET["Skill Market"] -. "reusable skills" .-> SDK
 ```
 
-## Open-source foundation
+## Public developer stack
 
-| Project | What it does | Links |
-| --- | --- | --- |
-| **Agent SDK** | Runs the complete Agent loop in-process, with model providers, tools, MCP, skills, sessions, hooks, and permissions. | [GitHub](https://github.com/zerone-agents/agent-sdk) · [npm](https://www.npmjs.com/package/@zerone-agent/agent-sdk) · [Overview](https://www.zerone.run/en/sdk-runtime) |
-| **Agent Runtime** | Builds on Agent SDK to expose Agents through standard HTTP, SSE, sessions, metrics, authentication, and a multi-Agent registry. | [GitHub](https://github.com/zerone-agents/agent-runtime) · [npm](https://www.npmjs.com/package/@zerone-agent/agent-runtime) · [Overview](https://www.zerone.run/en/sdk-runtime) |
+| Project | What it does | License | Links |
+| --- | --- | --- | --- |
+| **Agent SDK** | Runs the complete Agent loop in-process, with model providers, tools, MCP, skills, sessions, hooks, and permissions. | [MIT](https://github.com/zerone-agents/agent-sdk/blob/main/LICENSE) | [GitHub](https://github.com/zerone-agents/agent-sdk) · [npm](https://www.npmjs.com/package/@zerone-agent/agent-sdk) · [Overview](https://www.zerone.run/en/sdk-runtime) |
+| **Agent Runtime** | Builds on Agent SDK to expose Agents through standard HTTP, SSE, sessions, metrics, authentication, and a multi-Agent registry. | [MIT](https://github.com/zerone-agents/agent-runtime/blob/main/LICENSE) | [GitHub](https://github.com/zerone-agents/agent-runtime) · [npm](https://www.npmjs.com/package/@zerone-agent/agent-runtime) · [Overview](https://www.zerone.run/en/sdk-runtime) |
+| **Agent Deployer** | Manages the lifecycle of Agent Runtime Docker containers, including configuration, sessions, and skills. | [MIT](https://github.com/zerone-agents/agent-deployer/blob/main/LICENSE) | [GitHub](https://github.com/zerone-agents/agent-deployer) |
+| **Agent Hub** | Provides the team control plane for configuring, deploying, managing, and governing Agents. | [Source-available](https://github.com/zerone-agents/agent-hub/blob/main/LICENSE) | [GitHub](https://github.com/zerone-agents/agent-hub) · [Overview](https://www.zerone.run/en/hub) |
 
-Both projects are open source under the MIT License.
+Agent SDK, Agent Runtime, and Agent Deployer are open source under the MIT License. Agent Hub is source-available under the Zerone Agent Hub License; review its terms for hosted services, commercial embedding, and branding requirements.
 
 ## Zerone products
 
@@ -51,7 +55,7 @@ A local-first, extensible, remotely controllable desktop Agent workspace for ind
 
 Centralize models, tools, skills, and knowledge so a team can configure, run, and govern its Agents consistently.
 
-[Explore Agent Hub](https://www.zerone.run/en/hub)
+[Explore Agent Hub](https://www.zerone.run/en/hub) · [View source](https://github.com/zerone-agents/agent-hub)
 
 ## Explore the ecosystem
 
@@ -61,4 +65,4 @@ Centralize models, tools, skills, and knowledge so a team can configure, run, an
 
 ## Contributing and community
 
-We welcome focused issues and pull requests in [Agent SDK](https://github.com/zerone-agents/agent-sdk) and [Agent Runtime](https://github.com/zerone-agents/agent-runtime). For product questions, ideas, and broader discussion, visit [GitHub Discussions](https://github.com/orgs/zerone-agents/discussions).
+We welcome focused issues and pull requests across [Agent SDK](https://github.com/zerone-agents/agent-sdk), [Agent Runtime](https://github.com/zerone-agents/agent-runtime), [Agent Deployer](https://github.com/zerone-agents/agent-deployer), and [Agent Hub](https://github.com/zerone-agents/agent-hub). For product questions, ideas, and broader discussion, visit [GitHub Discussions](https://github.com/orgs/zerone-agents/discussions).
